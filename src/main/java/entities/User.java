@@ -1,10 +1,13 @@
 package entities;
 
+import java.sql.Timestamp;
+
 public class User {
     private int user_id;
     private String user_name;
     private String user_pass;
     private String user_email;
+
 
     public User()
     {
