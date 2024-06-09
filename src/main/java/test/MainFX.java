@@ -8,12 +8,13 @@ import javafx.stage.Stage;
 public class MainFX extends Application{
     @Override
     public void start(Stage stage) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Admin/Dashboard_Items.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/LoginScreen.fxml"));
 
         Parent root= fxmlLoader.load();
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setFullScreen(true);
         stage.setTitle("Caisse");
         stage.show();
     }

@@ -110,6 +110,19 @@ public class DashboardAdminUsers {
             System.out.println(e.getMessage());
         }
     }
+    @FXML
+    void goToTable(ActionEvent event) {
+        try{
+            //LOAD THE PAGE
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Admin/Dashboard_Table.fxml"));
+            Parent root= fxmlLoader.load();
+            //CHANGE THE PAGE
+            table_id.getScene().setRoot(root);
+        }catch(IOException e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
 
     @FXML
     void goToUsersAdmin(ActionEvent event){

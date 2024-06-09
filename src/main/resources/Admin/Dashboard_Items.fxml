@@ -68,5 +68,10 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
+      <Button layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#goToTable" prefHeight="60.0" prefWidth="142.0" text="Table">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

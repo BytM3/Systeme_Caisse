@@ -60,4 +60,17 @@ public class ServiceUser implements IService<User>{
         }
         return users;
     }
+    public User findUser(String username)
+    {
+        User temp = new User();
+        try{
+            List<User> users = show();
+            temp = users.stream().filter(e->e.getUser_name().toLowerCase().equals(username.toLowerCase())).findFirst().get();
+            return temp;
+        }catch(SQLException e)
+        {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane minHeight="720.0" minWidth="1280.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Entities.Table.TableAdd">
+   <children>
+      <TextField fx:id="nom_id" layoutX="113.0" layoutY="178.0" promptText="Nom Table">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="113.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Table : " wrappingWidth="149.60000000000014">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="113.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description Table : " wrappingWidth="227.2000366210939">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="size_id" layoutX="113.0" layoutY="497.0" promptText="Taille Table ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="113.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taille Table :" wrappingWidth="227.2000366210939">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="num_id" layoutX="113.0" layoutY="585.0" promptText="Numero Table">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="113.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Table :" wrappingWidth="227.2000366210939">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="886.0" layoutY="166.0" mnemonicParsing="false" onAction="#AddTable" prefHeight="63.0" prefWidth="220.0" text="ADD">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="886.0" layoutY="432.0" mnemonicParsing="false" onAction="#CancelTheAdd" prefHeight="63.0" prefWidth="220.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="desc_id" layoutX="113.0" layoutY="277.0" prefHeight="158.0" prefWidth="471.0" promptText="Description">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
